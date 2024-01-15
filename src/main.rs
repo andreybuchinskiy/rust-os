@@ -1,3 +1,4 @@
+#![no_main]
 #![no_std]
 #![feature(panic_info_message)]
 use core::arch::asm;
@@ -49,4 +50,3 @@ extern "C" fn abort() -> ! {
 
 #[no_mangle]
 extern "C" fn kmain() {}
-
